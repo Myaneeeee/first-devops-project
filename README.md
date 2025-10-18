@@ -1,12 +1,32 @@
 # First DevOps Project
-This repository contains links to the First DevOps Project's backend and frontend repositories.
 
-Backend Repository: https://github.com/Myaneeeee/first-devops-project-be\n
-Frontend Repository: https://github.com/Myaneeeee/first-devops-project-fe
+This repository links to the backend and frontend of the First DevOps Project.
 
-## Description:
-Built a full-stack authentication app with user registration, login, and role-based access (user/admin). The frontend uses React with Vite, Tailwind, and TypeScript, managing state with context and using JWT access/refresh tokens. The backend is built with Express.js and PostgreSQL.
+- **Backend:** https://github.com/Myaneeeee/first-devops-project-be  
+- **Frontend:** https://github.com/Myaneeeee/first-devops-project-fe  
 
-The PostgreSQL database is hosted on AWS RDS inside a custom VPC with subnets and security groups. Both frontend and backend are containerized with Docker, pushed to AWS ECR, and deployed on an EKS Kubernetes cluster using manifests for deployments and LoadBalancer services.
+## Project Overview
 
-Set up CI/CD with Jenkins on an EC2 instance to automate builds, tests, ECR pushes, and Kubernetes deployments via a Groovy pipeline triggered by GitHub webhooks. Added monitoring with Prometheus and Grafana.
+A full-stack authentication application with user registration, login, and role-based access (user/admin).  
+
+### Frontend
+- Built with **React**, **Vite**, **TypeScript**, and **Tailwind CSS**  
+- State management using **Context API**  
+- Authentication handled with **JWT access/refresh tokens**  
+
+### Backend
+- Built with **Express.js** and **PostgreSQL**  
+- Database hosted on **AWS RDS** within a custom **VPC**, subnets, and security groups  
+
+### Deployment
+- Containerized with **Docker**  
+- Images pushed to **AWS ECR**  
+- Deployed on **AWS EKS** using Kubernetes manifests with **LoadBalancer services**  
+
+### CI/CD
+- Automated with **Jenkins** running on an **EC2 instance**  
+- Pipeline handles builds, tests, Docker pushes, and Kubernetes deployments  
+- Triggered via **GitHub webhooks**  
+
+### Monitoring
+- Integrated **Prometheus** and **Grafana** for cluster monitoring
